@@ -1,34 +1,59 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+//import React from 'react'
+//import PrincipalTitle from './components/PrincipalTitle/PrincipalTitle'
+//import Button from './components/Button/Button'
+import ItemCount from './components/ItemCount/ItemCount'
 
-function App() {
-  const [count, setCount] = useState(0)
+//el componente principal de la aplicacion es App.
+
+/* COMPONENTES */
+/*
+Es un conjunto de elementos que cumplen una funcion especifica en la interfaz del usuario.
+
+Ventajas:
+  -Reutilizacion de codigo,
+  -Favorece la separacion de responsabilidades,
+  -El codigo se vuelve mas facil de entender,
+  -Mejora el rendimiento de la aplicacion debido al DOM virtual.
+
+Caracteristicas principales:
+  -Renderizar un unico elemento, no puedo poner por ejemplo un div y un p,
+  -Pueden recibir propiedades (props),
+  -Pueden tener un estado.
+
+Que son las props?
+Son objetos que contienen datos que un componente necesita para renderizarse correctamente.
+Estas se envian de forma unidireccional de un componente padre a un componente hijo.
+
+Que es un estado?
+El estado es un objeto que contiene informacion del componente que puede cambiar durante la ejecucion de la aplicacion.
+*/
+
+const App = () => {
+  //Esta parte se utiliza para toda la logica detras del componente
 
   return (
+    //Esta parte es para renderizar todo lo que se ve luego en el html. No es html, es JSX.
+
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <ItemCount/>
     </>
+
+    // <>
+    //   <PrincipalTitle saludo="Hola mundo"/>
+    //   <Button texto="ok"/>
+    //   <Button texto="cancelar"/>
+    // </>
+
+    // <>
+    //   <h1>Tambien puedo renderizar de esta forma</h1>
+    //   <p>para no alterar la semantica del html</p>
+    // </>
+
+    //<div>
+    //  Esto lo puedo renderizar
+    //  <p>Esto tambien</p>
+    //</div>
+    //<p>Esto no</p>
   )
 }
 
