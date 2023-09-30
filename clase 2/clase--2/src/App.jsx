@@ -1,7 +1,9 @@
 //import React from 'react'
 //import PrincipalTitle from './components/PrincipalTitle/PrincipalTitle'
 //import Button from './components/Button/Button'
-import ItemCount from './components/ItemCount/ItemCount'
+//import ItemCount from './components/ItemCount/ItemCount'
+import Navbar from './components/Navbar/Navbar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 //el componente principal de la aplicacion es App.
 
@@ -35,8 +37,14 @@ const App = () => {
     //Esta parte es para renderizar todo lo que se ve luego en el html. No es html, es JSX.
 
     <>
-      <ItemCount/>
+      <Navbar/>
+      <ItemListContainer greeting="Hola mundo!"/>
     </>
+    // <>
+    //   <ItemCount stock={15}/>
+    //   <hr />
+    //   <ItemCount stock={10}/>
+    // </>
 
     // <>
     //   <PrincipalTitle saludo="Hola mundo"/>
