@@ -1,7 +1,8 @@
 // import Categorias from './components/Categorias/Categorias'
-import Promesas from './components/Promesas/Promesas'
+// import Promesas from './components/Promesas/Promesas'
 // import Articulos from './components/Articulos/Articulos'
 // import Contador from './components/Contador/Contador'
+import Map from "./components/Map/Map"
 
 const App = () => {
   return (
@@ -23,7 +24,8 @@ const App = () => {
 
       {/* <Contador/> */}
       {/* <Categorias/> */}
-      <Promesas/>
+      {/* <Promesas/> */}
+      <Map/>
     </>
   )
 }
