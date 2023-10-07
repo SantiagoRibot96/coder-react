@@ -1,16 +1,22 @@
-import React from 'react'
+import { useState, useEffect } from "react"
+import { getProductos } from "../../asyncmock"
+import ItemList from "../ItemList/ItemList"
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
 
-  const degrade = {
-    background: "linear-gradient(to right, red 25%, yellow, blue, orange)",
-    color: "blue",
-    border: "solid black",
-    padding: "1rem"
-  };
+  const [productos, setProductos] = useState([]);
+
+  useEffect(() => {
+    getProductos()
+      .then(respuesta => setProductos(respuesta))
+      .catch(error => console.log(error))
+  }, []);
 
   return (
-    <h2 style={degrade}> {props.greeting} </h2>
+    <>
+      <h2 style={{textAlign:"center"}}>Mis productos: </h2>
+      <ItemList productos = {productos} />
+    </>
   )
 }
 

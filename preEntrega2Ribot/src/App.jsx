@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <Navbar/>
-      <ItemListContainer greeting="Hola, bienvenido a mi primer pagina de React!"/>
+      <ItemListContainer/>
     </>
   )
 }

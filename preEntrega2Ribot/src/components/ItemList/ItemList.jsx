@@ -1,8 +1,12 @@
 import React from 'react'
+import Item from "../Item/Item"
+import './ItemList.css'
 
-const ItemList = () => {
+const ItemList = ({productos}) => {
   return (
-    <div>ItemList</div>
+    <div className='cardItemList'>
+        {productos.map(item => <Item key={item.id} {...item} /> )}
+    </div>
   )
 }
 
