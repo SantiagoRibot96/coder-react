@@ -1,13 +1,15 @@
 // import AsyncAwait from './Componentes/Async/AsyncAwait'
 // import JsonPlaceHolder from './Componentes/JsonPlaceHolder/JsonPlaceHolder'
-import Nesflix from "./Componentes/Nesflix/Nesflix"
+import Form from "./Componentes/Form/Form"
+// import Nesflix from "./Componentes/Nesflix/Nesflix"
 
 const App = () => {
   return (
     <div>
       {/* <AsyncAwait/> */}
       {/* <JsonPlaceHolder/> */}
-      <Nesflix/>
+      {/* <Nesflix/> */}
+      <Form/>
     </div>
   )
 }
