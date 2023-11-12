@@ -1,15 +1,13 @@
-import { initializeApp } from "firebase/app";       //se utiliza para inicializar la conexion con firebase
-import { getFirestore } from "firebase/firestore";  //se utiliza para obtener una instancia de firestore
-
-/* FIRESTORE: Es uno de los servicios que brinda firebase para poder crear y manipular bases de datos dinamicas */
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDvFGxbKzw_0HHochmMpI7-Nzd0Nt31hjU",
-  authDomain: "clase--7.firebaseapp.com",
-  projectId: "clase--7",
-  storageBucket: "clase--7.appspot.com",
-  messagingSenderId: "275497839594",
-  appId: "1:275497839594:web:b79a9ba464ae73b34d6093"
+  apiKey: "AIzaSyAte66wr2gkug1kPYQJWoi7M6FFlI8_UNo",
+  authDomain: "todoparrillas-be4ea.firebaseapp.com",
+  projectId: "todoparrillas-be4ea",
+  storageBucket: "todoparrillas-be4ea.appspot.com",
+  messagingSenderId: "73368551427",
+  appId: "1:73368551427:web:887bd4e89df83c1f590e36"
 };
 
 const app = initializeApp(firebaseConfig);

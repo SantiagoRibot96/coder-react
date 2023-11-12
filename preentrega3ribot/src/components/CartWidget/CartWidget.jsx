@@ -4,17 +4,15 @@ import { Link } from 'react-router-dom';
 import './CartWidget.css';
 
 const CartWidget = () => {
-  const { cantidadTotal } = useContext(CarritoContext);
+  const {total} = useContext(CarritoContext);
 
   return (
     <div>
-
-      <Link to="/cart">
-        <img className='carrito' src="../img/carrito.jpg" alt="Carrito de compras" />
+      <Link to = "/cart" className='btn'>
+        <img className="carritoDeCompras" src="https://cdn-icons-png.flaticon.com/512/3144/3144456.png" alt="Carrito" />
         {
-          cantidadTotal > 0 && <strong> {cantidadTotal} </strong>
+          total > 0 && <strong> {total} </strong>
         }
-
       </Link>
     </div>
   )
